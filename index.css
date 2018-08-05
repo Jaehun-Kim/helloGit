@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    background-image: url(./templated-visualize/images/bg.jpg);
+    background-size: cover;
+
+    position: relative;
+}
+
+body > div {
+    width: 1000px;
+    background-color: rgba(255,0,0, 0.1);
+}
+
+body * {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+header {
+    padding: 6em 0 4em 0;
+    width: 1000px;
+    height: 350px;
+    background-color: rgba(0,0,255, 0.1);
+}
+
+header > div.myPicture {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color: rgba(0,255,0, 0.1);
+}
+
+header > p {
+    font-size: 24px;
+}
+
+header > section {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0,255,0, 0.1);
+}
+
+header > section > div {
+    margin: 0 10px;
+    width: 50px;
+    height: 100%;
+    border-radius: 100%;
+    background-color: rgba(0,0,255, 0.1);
+
+    left: 0;
+    transform: translateX(0);
+}
+
+div > section > article {
+    margin: 0 20px;
+
+    display: inline-block;
+    width: 25%;
+    background-color: rgba(0,255,0, 0.1);
+
+    left: 0;
+    transform: translateX(0);
+}
