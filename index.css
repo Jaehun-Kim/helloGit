@@ -7,7 +7,7 @@ body {
 }
 
 body > div {
-    width: 1000px;
+    width: 1500px;
 }
 
 body * {
@@ -19,15 +19,15 @@ body * {
 
 header {
     margin: 6em 0 4em 0;
-    width: 1000px;
+    width: 100%;
     height: 350px;
 
     position: relative;
 }
 
 header > div.myPicture {
-    width: 150px;
-    height: 150px;
+    width: 170px;
+    height: 170px;
     
     border: 5px solid rgba(255,255,255, 0.2);
     border-radius: 100%;
@@ -36,8 +36,8 @@ header > div.myPicture {
 }
 
 header > div.myPicture > img {
-    width: 150px;
-    height: 150px;
+    width: 170px;
+    height: 170px;
     
     border-radius: 100%;
 }
@@ -48,6 +48,8 @@ header > p {
 }
 
 header > section {
+    margin-top: 50px;
+
     display: flex;
     justify-content: center;
 
@@ -66,6 +68,17 @@ header > section > div {
 
     left: 0;
     transform: translateX(0);
+}
+header > section > div:hover {
+    background-color: rgba(255,255,255, 0.2);
+
+    transition-property: background-color;
+    transition-duration: 0.3s;
+}
+header > section > div:hover > img {
+    opacity: 1;
+
+    transition-property: opacity;
 }
 
 header > section > div > img {
@@ -119,9 +132,13 @@ div > section > article > figure > h2 {
 }
 
 div >footer {
-    margin: 50px 0 50px 0;
+    margin-top: 50px;
+    padding: 50px 0 50px 0;
+
     width: 100%;
 
     color: rgba(255,255,255, 1);
     font-size: 12px;
+
+    border-top: 1px solid rgba(255,255,255, 0.2);
 }
