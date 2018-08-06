@@ -8,7 +8,6 @@ body {
 
 body > div {
     width: 1000px;
-    background-color: rgba(255,0,0, 0.1);
 }
 
 body * {
@@ -19,21 +18,33 @@ body * {
 }
 
 header {
-    padding: 6em 0 4em 0;
+    margin: 6em 0 4em 0;
     width: 1000px;
     height: 350px;
-    background-color: rgba(0,0,255, 0.1);
+
+    position: relative;
 }
 
 header > div.myPicture {
     width: 150px;
     height: 150px;
+    
+    border: 5px solid rgba(255,255,255, 0.2);
     border-radius: 100%;
-    background-color: rgba(0,255,0, 0.1);
+
+    color: rgba(255,255,255, 1);
+}
+
+header > div.myPicture > img {
+    width: 150px;
+    height: 150px;
+    
+    border-radius: 100%;
 }
 
 header > p {
     font-size: 24px;
+    color: rgba(255,255,255, 0.65);
 }
 
 header > section {
@@ -42,7 +53,6 @@ header > section {
 
     width: 100%;
     height: 50px;
-    background-color: rgba(0,255,0, 0.1);
 }
 
 header > section > div {
@@ -50,10 +60,28 @@ header > section > div {
     width: 50px;
     height: 100%;
     border-radius: 100%;
-    background-color: rgba(0,0,255, 0.1);
+    border: 1px solid rgba(255,255,255, 0.2);
+
+    background-color: rgba(255,255,255, 0.1);
 
     left: 0;
     transform: translateX(0);
+}
+
+header > section > div > img {
+    width: 55%;
+    height: 55%;
+
+    transform: translate(-90%, 40%);
+
+    opacity: 0.8;
+}
+
+div > section {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
 }
 
 div > section > article {
@@ -61,8 +89,39 @@ div > section > article {
 
     display: inline-block;
     width: 25%;
-    background-color: rgba(0,255,0, 0.1);
 
     left: 0;
     transform: translateX(0);
+}
+
+div > section > article > figure {
+    width: 100%;
+
+    margin: 0 0 30px 0;
+    border-radius: 5px;
+    border: 1px solid rgba(255,255,255, 1);
+    background-color: rgba(255,255,255, 0.1);
+    overflow: hidden;
+}
+
+div > section > article > figure > img {
+    width: 100%;
+}
+
+div > section > article > figure > h2 {
+    margin: 0;
+    padding: 12px 0 16px 0;
+
+    font-size: 12px;
+    font-weight: 200;
+    color: rgba(255,255,255, 0.8);
+
+}
+
+div >footer {
+    margin: 50px 0 50px 0;
+    width: 100%;
+
+    color: rgba(255,255,255, 1);
+    font-size: 12px;
 }
